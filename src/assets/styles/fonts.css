@@ -1,0 +1,18 @@
+:root {
+    --font--bellefair: Bellefair;
+    --font--barlow-condensed: BarlowCondensed;
+}
+
+@font-face {
+    font-family: 'Bellefair';
+    src: url('../fonts/Bellefair.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../fonts/BarlowCondensed.ttf ') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
