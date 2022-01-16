@@ -1,10 +1,12 @@
 {
     "extends": [
+        "plugin:react/recommended",
         "airbnb",
-        "airbnb-typescript",
         "airbnb/hooks",
+        "airbnb-typescript",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:prettier/recommended"
     ],
     "plugins": [],
     "parser": "@typescript-eslint/parser",
@@ -12,7 +14,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 2021,
+        "ecmaVersi#on": 2021,
         "sourceType": "module",
         "project": ["./tsconfig.json"]
     },
@@ -35,9 +37,6 @@
                 "allowExpressions": true
             }
         ],
-        "indent": "off",
-        "@typescript-eslint/indent": ["error", 4],
-        "react/jsx-indent": ["error", 4],
-        "react/jsx-indent-props": [2, "first"]
+        "jsx-a11y/anchor-is-valid": "warn"
     }
 }
