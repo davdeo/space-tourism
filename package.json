@@ -3,6 +3,16 @@
     "version": "1.0.0",
     "description": "",
     "private": false,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/davdeo/react-boiler-plate.git"
+    },
+    "author": "David Monz",
+    "license": "UNLICENCED",
+    "bugs": {
+        "url": "https://github.com/davdeo/react-boiler-plate/issues"
+    },
+    "homepage": "https://davdeo.github.io/react-boiler-plate/",
     "scripts": {
         "build": "webpack",
         "start": "webpack serve --open",
@@ -15,18 +25,13 @@
         "stylelint-fix": "stylelint --fix src/{**/*,*}.{css,less}",
         "check-lint-config": "yarn check-eslint-config && yarn check-stylelint-config",
         "lint-scan": "yarn eslint-scan && yarn stylelint-scan",
-        "lint-fix": "yarn eslint-fix && yarn stylelint-fix"
+        "lint-fix": "yarn eslint-fix && yarn stylelint-fix",
+        "prepare": "husky install"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/davdeo/react-boiler-plate.git"
+    "lint-staged": {
+        "{**/*,*}.{css,less}": "stylelint --fix",
+        "{**/*,*}.{js,jsx,ts,tsx,md}": "eslint --cache --fix"
     },
-    "author": "David Monz",
-    "license": "UNLICENCED",
-    "bugs": {
-        "url": "https://github.com/davdeo/react-boiler-plate/issues"
-    },
-    "homepage": "https://davdeo.github.io/react-boiler-plate/",
     "dependencies": {
         "lodash": "^4.17.21",
         "react": "^17.0.2",
@@ -55,6 +60,8 @@
         "eslint-plugin-react-hooks": "^4.3.0",
         "gh-pages": "^3.2.3",
         "html-webpack-plugin": "^5.5.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.7",
         "prettier": "^2.5.1",
         "style-loader": "^3.3.1",
         "stylelint": "^14.2.0",
