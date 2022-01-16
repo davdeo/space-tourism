@@ -1,0 +1,43 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "plugins": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "project": ["./tsconfig.json"]
+    },
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
+        "import/prefer-default-export": "off",
+        "react/function-component-definition": ["error", {
+            "namedComponents": "arrow-function",
+            "unnamedComponents":  "arrow-function"
+        }],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "indent": "off",
+        "@typescript-eslint/indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": [2, "first"]
+    }
+}
