@@ -23,6 +23,7 @@
         "es2021": true
     },
     "rules": {
+        "@typescript-eslint/no-explicit-any": "error",
         "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
         "import/prefer-default-export": "off",
         "react/function-component-definition": ["error", {
