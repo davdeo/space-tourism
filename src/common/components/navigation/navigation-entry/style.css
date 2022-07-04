@@ -1,0 +1,24 @@
+.navigation-button {
+    padding-left: 8px;
+
+    font-size: var(--font-size--nav-text);
+    line-height: 32px;
+    letter-spacing: var(--letter-spacing--nav-text);
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--color-white);
+}
+
+.navigation-button.current-page {
+    border-right: var(--color-white) 3px solid;
+}
+
+.navigation-button-number {
+    margin-right: 8px;
+
+    font-weight: bold;
+}
+
+.navigation-button:active {
+    background-color: var(--color-blue--very-light--transparent);
+}

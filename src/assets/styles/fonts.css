@@ -1,6 +1,25 @@
 :root {
-    --font-weight--regular: 400;
-    --font-size: 18px;
+    --font--bellefair: bellefair;
+    --font--barlow-condensed: barlowcondensed;
+    --font-size--heading-1: 150px;
+    --font-size--heading-2: 100px;
+    --font-size--heading-3: 56px;
+    --font-size--heading-4: 32px;
+    --font-size--heading-5: 28px;
+    --letter-spacing--heading-5: 4.75;
+    --font-size--sub-heading-1: 28px;
+    --font-size--sub-heading-2: 14px;
+    --letter-spacing--sub-heading-2: 2.35;
+    --font-size--nav-text: 16px;
+    --letter-spacing--nav-text: 2.7px;
+    --font-size--body-text: 16px;
+}
+
+@font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: Bellefair;
+    src: url('../fonts/Bellefair.ttf') format('truetype');
 }
 
 @font-face {

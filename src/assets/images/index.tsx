@@ -1,10 +1,22 @@
-import SampleIcon from './icon-clock.svg';
-import SampleImage from './image-equilibrium.jpg';
+import { BackgroundCrew, ImageCrew } from './crew';
+import { BackgroundDestination, ImageDestination } from './destination';
+import { BackgroundHome } from './home';
+import { IconShared } from './shared';
+import { BackgroundTechnology, ImageTechnology } from './technology';
 
-export const ICON = {
-    SAMPLE_ICON: SampleIcon
+export const BACKGROUND = {
+    ...BackgroundCrew,
+    ...BackgroundDestination,
+    ...BackgroundHome,
+    ...BackgroundTechnology
 };
 
 export const IMAGE = {
-    SAMPLE_IMAGE: SampleImage
+    ...ImageCrew,
+    ...ImageDestination,
+    ...ImageTechnology
+};
+
+export const ICON = {
+    ...IconShared
 };

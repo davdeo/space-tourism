@@ -1,0 +1,28 @@
+.home::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('../../assets/images/home/background-home-mobile.jpg');
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
+    .home::before {
+        background-image: url('../../assets/images/home/background-home-tablet.jpg');
+    }
+}
+
+@media (min-width: 1024px) {
+    .home::before {
+        background-image: url('../../assets/images/home/background-home-desktop.jpg');
+    }
+}
