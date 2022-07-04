@@ -1,18 +1,18 @@
 {
-    "name": "react-boilerplate",
+    "name": "space-tourism",
     "version": "1.0.0",
     "description": "",
     "private": false,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/davdeo/react-boiler-plate.git"
+        "url": "git+https://github.com/davdeo/space-tourism.git"
     },
     "author": "David Monz",
     "license": "UNLICENCED",
     "bugs": {
-        "url": "https://github.com/davdeo/react-boiler-plate/issues"
+        "url": "https://github.com/davdeo/space-tourism/issues"
     },
-    "homepage": "https://davdeo.github.io/react-boiler-plate/",
+    "homepage": "https://davdeo.github.io/space-tourism/",
     "scripts": {
         "build": "webpack",
         "start": "webpack serve --open",
@@ -61,6 +61,7 @@
         "gh-pages": "^3.2.3",
         "html-webpack-plugin": "^5.5.0",
         "husky": "^7.0.4",
+        "json-server": "^0.17.0",
         "lint-staged": "^12.1.7",
         "prettier": "^2.5.1",
         "style-loader": "^3.3.1",
