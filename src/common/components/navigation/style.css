@@ -50,8 +50,7 @@
         height: 100vh;
         padding: 80px 0 0 24px;
 
-        background-color: var(--color-white--transparent);
-        backdrop-filter: blur(16px);
+        background-color: var(--color-blue--very-very-dark--90);
     }
 
     .navigation-bar.hidden {
@@ -84,5 +83,5 @@
 }
 
 .navigation-burger-button:active {
-    background-color: var(--color-blue--very-light--transparent);
+    background-color: var(--color-blue--very-light--10);
 }

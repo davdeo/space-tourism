@@ -20,5 +20,5 @@
 }
 
 .navigation-button:active {
-    background-color: var(--color-blue--very-light--transparent);
+    background-color: var(--color-blue--very-light--10);
 }
