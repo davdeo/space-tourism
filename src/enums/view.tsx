@@ -3,5 +3,6 @@ export enum View {
     HOME = '',
     CREW = 'crew',
     DESTINATION = 'destination',
-    TECHNOLOGY = 'technology'
+    TECHNOLOGY = 'technology',
+    FOUR_ZERO_FOUR = '*'
 }
