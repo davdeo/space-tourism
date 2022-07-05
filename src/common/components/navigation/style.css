@@ -1,6 +1,6 @@
 .navigation {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
 
     z-index: 900;
@@ -8,7 +8,7 @@
     height: 80px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 768px) {
     .navigation {
         height: 96px;
     }
@@ -20,7 +20,7 @@
     aspect-ratio: 1;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 768px) {
     .navigation-logo {
         width: 48px;
     }
@@ -35,18 +35,19 @@
     /*    TODO Continue here with tablett and desktop version of navbar */
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .navigation-bar {
         flex-direction: column;
         align-items: stretch;
 
         position: fixed;
         top: 0;
-        left: 34vw;
+        right: 0;
 
-        transition: left ease-out 250ms;
+        transition: right ease-out 250ms;
 
         width: 66vw;
+        max-width: 250px;
         height: 100vh;
         padding: 80px 0 0 24px;
 
@@ -54,25 +55,26 @@
     }
 
     .navigation-bar.hidden {
-        left: 100%;
+        right: -100%;
 
-        transition: left ease-in 250ms;
+        transition: right ease-in 250ms;
     }
 }
 
 .navigation-burger-button {
     z-index: 999;
 
-    margin-right: 24px;
-    width: 32px;
+    margin-right: 16px;
+    width: 48px;
 
     background-image: url('../../../assets/images/shared/icon-close.svg');
     background-position: 50%;
     background-repeat: no-repeat;
+    cursor: pointer;
     aspect-ratio: 1;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 768px) {
     .navigation-burger-button {
         display: none;
     }
