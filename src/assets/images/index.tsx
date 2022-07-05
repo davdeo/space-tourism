@@ -4,19 +4,19 @@ import { BackgroundHome } from './home';
 import { IconShared } from './shared';
 import { BackgroundTechnology, ImageTechnology } from './technology';
 
-export const BACKGROUND = {
+export const Background = {
     ...BackgroundCrew,
     ...BackgroundDestination,
     ...BackgroundHome,
     ...BackgroundTechnology
 };
 
-export const IMAGE = {
+export const Image = {
     ...ImageCrew,
     ...ImageDestination,
     ...ImageTechnology
 };
 
-export const ICON = {
+export const Icon = {
     ...IconShared
 };

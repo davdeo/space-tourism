@@ -4,10 +4,10 @@ import './style.css';
 import { useLocation } from 'react-router-dom';
 import classNames from 'classnames';
 import { View } from '../../../enums';
-import { ICON } from '../../../assets/images';
+import { Icon } from '../../../assets/images';
 import { NavigationEntry } from './navigation-entry';
 
-const navigationEntries: { pathname: string; title: string }[] = [
+const NavigationEntries: { pathname: string; title: string }[] = [
     { pathname: View.APP + View.HOME, title: 'Home' },
     { pathname: View.APP + View.CREW, title: 'Crew' },
     { pathname: View.APP + View.DESTINATION, title: 'Destination' },
@@ -24,7 +24,7 @@ export const Navigation: React.FunctionComponent = () => {
 
     return (
         <div className="navigation">
-            <img src={ICON.LOGO} alt="logo" className="navigation-logo" />
+            <img src={Icon.LOGO} alt="logo" className="navigation-logo" />
             <div
                 className={classNames('navigation-burger-button', {
                     hidden: navigationBarHidden
@@ -40,7 +40,7 @@ export const Navigation: React.FunctionComponent = () => {
                     hidden: navigationBarHidden
                 })}
             >
-                {navigationEntries.map((entry, index) => (
+                {NavigationEntries.map((entry, index) => (
                     <NavigationEntry
                         to={entry.pathname}
                         id={index}
