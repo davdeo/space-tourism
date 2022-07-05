@@ -24,6 +24,7 @@ export const NavigationEntry: React.FunctionComponent<Props> = (props: Props) =>
                 'current-page': isCurrentPage
             })}
             onClick={onClick}
+            tabIndex={0}
         >
             <span aria-hidden className="navigation-button-number">
                 {id.toLocaleString('de-DE', { minimumIntegerDigits: 2, useGrouping: false })}
